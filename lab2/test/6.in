@@ -1,0 +1,1 @@
+fun abs(a: Int): Unit DoNotWriteAnythingAfterFunctionType_ItWillBeExceptionEvenIfFunctionIsCorrect

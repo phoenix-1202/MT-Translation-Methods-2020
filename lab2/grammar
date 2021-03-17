@@ -1,0 +1,35 @@
+	+-------+------------------------+
+	| Token |        Terminal        |
+	+-------+------------------------+
+	| FUN   | fun                    |
+	| NAME  | (a-zA-Z_)(a-zA-Z0-9_)* |
+	| TYPE  | A-Z(a-zA-Z0-9_)*       |
+	| OB    | (                      |
+	| CB    | )                      |
+	| COMMA | ,                      |
+	| COLON | ;                      |
+	+-------+------------------------+
+
+	+-------------+----------------------------+
+	| No-terminal |            Rule            |
+	+-------------+----------------------------+
+	| Function    | FUN FunName Args FunType   |
+	| FunName     | NAME                       |
+	| Args        | OB Vars CB                 |
+	| Vars        | eps   | Var RestVars       |
+	| Var         | NAME COLON TYPE            |
+	| RestVars    | eps   | COMMA Var RestVars |
+	| FunType     | eps   | COLON TYPE         |
+	+-------------+----------------------------+
+
+	+-------------+------------+-----------+
+	| No-terminal |   FIRST    |  FOLLOW   |
+	+-------------+------------+-----------+
+	| Function    | FUN        | $         |
+	| FunName     | NAME       | OB        |
+	| Args        | OB         | $, COLON  |
+	| Vars        | eps, NAME  | CB        |
+	| Var         | NAME       | COMMA, CB |
+	| RestVars    | eps, COMMA | CB        |
+	| FunType     | eps, COLON | $         |
+	+-------------+------------+-----------+

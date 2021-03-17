@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/phoenix/CLionProjects/MT/lab2/Colors.h
+
+/home/phoenix/CLionProjects/MT/lab2/main.cpp
+iostream
+-
+string
+-
+utility
+-
+vector
+-
+fstream
+-
+Colors.h
+/home/phoenix/CLionProjects/MT/lab2/Colors.h
+

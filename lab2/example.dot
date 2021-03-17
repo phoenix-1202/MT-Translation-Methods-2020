@@ -1,0 +1,66 @@
+graph example {
+    a1 [label="fun"];
+    a3 [label="abc"];
+    a1 -- a3;
+    a4 [label="args"];
+    a12 [label="eps"];
+    a4 -- a12;
+    a1 -- a4;
+    a5 [label="Int"];
+    a1 -- a5;
+}
+
+/*
+graph try {
+    a1 [label="fun"];
+    a3 [label="abc"];
+    a1 -- a3;
+    a4 [label="args"];
+    a12 [label="vars"];
+    a36 [label="a: Double"];
+    a12 -- a36;
+    a37 [label="rest_vars"];
+    a111 [label="b: Bool"];
+    a37 -- a111;
+    a112 [label="rest_vars"];
+    a336 [label="c: Int"];
+    a112 -- a336;
+    a337 [label="rest_vars"];
+    a1011 [label="d: Char"];
+    a337 -- a1011;
+    a1012 [label="eps"];
+    a337 -- a1012;
+    a112 -- a337;
+    a37 -- a112;
+    a12 -- a37;
+    a4 -- a12;
+    a1 -- a4;
+    a5 [label="Int"];
+    a1 -- a5;
+}
+*/
+
+/*
+graph try {
+    a1 [label="fun"];
+    a3 [label="abc"];
+    a1 -- a3;
+    a4 [label="args"];
+    a12 [label="vars"];
+    a36 [label="KEK: LER"];
+    a12 -- a36;
+    a37 [label="rest_vars"];
+    a111 [label="a: Int"];
+    a37 -- a111;
+    a112 [label="rest_vars"];
+    a336 [label="B: DOUBLE"];
+    a112 -- a336;
+    a337 [label="eps"];
+    a112 -- a337;
+    a37 -- a112;
+    a12 -- a37;
+    a4 -- a12;
+    a1 -- a4;
+    a5 [label="Unit"];
+    a1 -- a5;
+}*/
