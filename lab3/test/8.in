@@ -1,0 +1,2 @@
+funWithIncorrectArgName :: Int -> Int
+funWithIncorrectArgName a = a * b

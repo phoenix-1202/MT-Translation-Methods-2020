@@ -1,0 +1,2 @@
+funWithManyBracketsAndUsingTrue :: Int -> Int -> Int
+funWithManyBracketsAndUsingTrue a b | (((((5))))) == 5 || ((((+ ((((a _)))+12) 5) > 0))) && true = 5

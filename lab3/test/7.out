@@ -1,0 +1,11 @@
+#include <bits/stdc++.h>;
+using namespace std;
+
+int funWithManyBracketsAndUsingTrue(int arg1, int arg2) {
+if ((5 == 5) || ((((a() + 12) + 5) > 0) && true)) {
+return 5;
+}
+
+}
+
+//EXIT

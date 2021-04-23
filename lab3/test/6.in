@@ -1,0 +1,2 @@
+funThatShowDifferenceBetweenArgsAndFunctionsWithoutArgs :: Int -> Int -> Int
+funThatShowDifferenceBetweenArgsAndFunctionsWithoutArgs x y = (x) + (((y _)))

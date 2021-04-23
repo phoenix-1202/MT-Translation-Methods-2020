@@ -1,0 +1,3 @@
+funWithEasyCalculatingAndEasyCondition :: Int -> Integer
+funWithEasyCalculatingAndEasyCondition a | a == 0 = 0
+funWithEasyCalculatingAndEasyCondition a = (f (a - 1)) + 1

@@ -1,0 +1,8 @@
+#include <bits/stdc++.h>;
+using namespace std;
+
+int funThatShowDifferenceBetweenArgsAndFunctionsWithoutArgs(int arg1, int arg2) {
+return (arg1 + y());
+}
+
+//EXIT

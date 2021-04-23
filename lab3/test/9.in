@@ -1,0 +1,7 @@
+mygcd :: Integer -> Integer -> Integer
+mygcd a b | a == 0 || b == 0 = a + b
+mygcd a b = if a < b then (mygcd a (b `mod` a)) else (mygcd (a `mod` b) b)
+
+nokWithOperationsOrderTroubles :: Integer -> Integer -> Integer
+nokWithOperationsOrderTroubles a b | (mygcd a b) == 1 = a * b
+nokWithOperationsOrderTroubles a b = a * b / (mygcd a b)

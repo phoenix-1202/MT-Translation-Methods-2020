@@ -1,0 +1,6 @@
+yesIToldYou :: Double -> Int
+yesIToldYou x | (x - 5) >= 100500.25 = 12
+
+doNotMergeFunctions :: String -> Int
+yesIToldYou s = 5
+doNotMergeFunctions a = 1

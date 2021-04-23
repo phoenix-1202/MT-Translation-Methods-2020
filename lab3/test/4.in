@@ -1,0 +1,3 @@
+funWithIf :: Int -> Int -> Int
+funWithIf a b | a == 0 || b == 0 = a + b
+funWithIf a b = if a > b then (funWithIf (a `mod` b) b) else (funWithIf a b `mod` a)

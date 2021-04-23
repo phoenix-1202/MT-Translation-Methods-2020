@@ -1,0 +1,8 @@
+#include <bits/stdc++.h>;
+using namespace std;
+
+int funWithManyOperationsAndBrackets(int arg1, int arg2) {
+return (((min(arg1, arg2) + max(arg1, arg2)) * 5) / 12);
+}
+
+//EXIT

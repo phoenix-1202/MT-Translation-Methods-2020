@@ -1,0 +1,8 @@
+#include <bits/stdc++.h>;
+using namespace std;
+
+Point randomFunction(long long arg1, double arg2, Point arg3) {
+return ((Point(arg1, arg2) + Point(leftProjection(arg2), rightProjection(arg3))) / arg2);
+}
+
+//EXIT

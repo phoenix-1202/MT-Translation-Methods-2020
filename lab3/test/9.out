@@ -1,0 +1,23 @@
+#include <bits/stdc++.h>;
+using namespace std;
+
+long long mygcd(long long arg1, long long arg2) {
+if ((arg1 == 0) || (arg2 == 0)) {
+return (arg1 + arg2);
+}
+if ((arg1 < arg2)) {
+return mygcd(arg1, (arg2 % arg1));
+}
+else {
+return mygcd((arg1 % arg2), arg2);
+}
+}
+
+long long nokWithOperationsOrderTroubles(long long arg1, long long arg2) {
+if ((mygcd(arg1, arg2) == 1)) {
+return (arg1 * arg2);
+}
+return (arg1 * (arg2 / mygcd(arg1, arg2)));
+}
+
+//EXIT

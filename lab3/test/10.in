@@ -1,0 +1,2 @@
+randomFunction :: Integer -> Double -> Point -> Point
+randomFunction a b c = ((( + (Point a b) (Point (leftProjection b) (rightProjection c))))) / (b)

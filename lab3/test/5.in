@@ -1,0 +1,2 @@
+funWithManyOperationsAndBrackets :: Int -> Int -> Int
+funWithManyOperationsAndBrackets a b = (((* (min ((a)) b) + (max a b) 5) / (((12)))))

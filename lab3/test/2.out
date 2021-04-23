@@ -1,0 +1,11 @@
+#include <bits/stdc++.h>;
+using namespace std;
+
+long long funWithEasyCalculatingAndEasyCondition(int arg1) {
+if ((arg1 == 0)) {
+return 0;
+}
+return (f((arg1 - 1)) + 1);
+}
+
+//EXIT

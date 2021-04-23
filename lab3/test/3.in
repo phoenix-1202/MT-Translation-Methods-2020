@@ -1,0 +1,4 @@
+funWithManyConditions :: Int -> Int -> Int
+funWithManyConditions a b | a == 0 || b == 0 = a + b
+funWithManyConditions a b | a > b = (funWithManyConditions (a `mod` b) b)
+funWithManyConditions a b = (funWithManyConditions a b `mod` a)
