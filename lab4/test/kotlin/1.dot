@@ -1,0 +1,31 @@
+graph example {
+a1 [label="function"];
+a6 [label="FUN: fun"];
+a1 -- a6;
+a7 [label="NAME: abc"];
+a1 -- a7;
+a8 [label="OB: ("];
+a1 -- a8;
+a9 [label="args"];
+a54 [label="arg"];
+a324 [label="NAME: a"];
+a54 -- a324;
+a325 [label="COMMA: :"];
+a54 -- a325;
+a326 [label="TYPE: Int"];
+a54 -- a326;
+a9 -- a54;
+a55 [label="restArgs"];
+a330 [label="EPS"];
+a55 -- a330;
+a9 -- a55;
+a1 -- a9;
+a10 [label="CB: )"];
+a1 -- a10;
+a11 [label="funType"];
+a66 [label="COLON: :"];
+a11 -- a66;
+a67 [label="TYPE: Unit"];
+a11 -- a67;
+a1 -- a11;
+}

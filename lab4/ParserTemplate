@@ -1,0 +1,20 @@
+package generated;
+
+import java.text.ParseException;
+%s
+
+public class Parser {
+    public final Lexer lex;
+	%s
+
+	public Parser(Lexer lex) {
+		this.lex = lex;
+	}
+
+    %s
+
+    public Node parse() throws ParseException {
+        lex.nextToken();
+        return %s();
+    }
+}
